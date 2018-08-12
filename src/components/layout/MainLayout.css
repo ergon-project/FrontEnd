@@ -2,3 +2,14 @@
     width: 100%;
     height: 600px;
 }
+
+.bigPic {
+    position: absolute;
+    z-index:-5;
+    height: 600px;
+    width:100%;
+    opacity:0.4;
+    background-image:url(https://ostomyconnection.com/.image/t_share/MTUwOTE0MjU3Njc0MzE0OTA1/group-of-diverse-ethnicity-joining-hands.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
