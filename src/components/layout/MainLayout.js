@@ -7,6 +7,7 @@ export default class MainLayout extends Component {
 	render() {
 		return <div className={'MainLayout'}> 
 			<AppNavbar/>
+			<div className={'fakeBody'}></div>
 			<Footer/>
 		</div>
 	}
