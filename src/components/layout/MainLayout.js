@@ -3,7 +3,7 @@ import './MainLayout.css';
 import AppNavbar from  './AppNavbar';
 import Footer from  './Footer';
 import logo from '../../assets/logo3.png';
-import MyCard from "../Cards";
+
 import Calendar from "../Calendar";
 
 export default class MainLayout extends Component {
@@ -15,7 +15,6 @@ export default class MainLayout extends Component {
 				<div className={'bigPic'}></div>
 				<img src={logo} style={{width: '100%'}} />
 			</div>
-			<MyCard/>
 			<Calendar />
 			<Footer/>
 		</div>

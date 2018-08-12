@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Button } from "react-materialize";
+import { Button, Card, Footer } from "react-materialize";
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
+import AppNavbar from "./components/layout/AppNavbar";
+import Signup from "./components/Signup";
+import MyCard from "./components/Cards";
+import Attendees from "./components/Attendees";
+import MyFooter from "./components/layout/Footer";
+import Mybio from "./components/bio";
+
 
 class App extends Component {
 	render() {
@@ -14,7 +21,7 @@ class App extends Component {
 				}} />
 				<Route
 					exact
-					path="/register"
+					path="/"
 					render={() => {
 						// return <SignupPage />;
 					}}
@@ -28,9 +35,19 @@ class App extends Component {
 				/>
 				<Route
 					exact
-					path="/"
+					path="/EventInfo"
 					render={() => {
-						// return <LoginPage />;
+						return <div>
+						<AppNavbar/>
+						<br/>
+						<Mybio/>
+						<br/>
+						<MyCard />
+						<br/>
+						<Attendees/>
+						<br/>
+						<MyFooter/>
+						</div>
 					}}
 				/>
 				<Route
