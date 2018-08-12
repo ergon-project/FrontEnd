@@ -6,6 +6,7 @@ import logo from '../../assets/logo3.png';
 
 export default class MainLayout extends Component {
 	render() {
+		console.log(this.props.children)
 		return <div className={'MainLayout'}> 
 			<AppNavbar/>
 			<div className={'fakeBody'}>
