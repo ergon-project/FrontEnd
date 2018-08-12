@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import {Button, Col, Modal, Icon, Input, Row} from 'react-materialize';
-import $ from 'jquery';
 
 class Signup extends Component {
     constructor(props){
