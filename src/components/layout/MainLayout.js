@@ -10,7 +10,7 @@ export default class MainLayout extends Component {
 	render() {
 		console.log(this.props.children)
 		return <div className={'MainLayout'}> 
-			<AppNavbar/>
+			{/* <AppNavbar/> */}
 			<div className={'fakeBody'}>
 				<div className={'bigPic'}></div>
 				<img src={logo} style={{width: '100%'}} />

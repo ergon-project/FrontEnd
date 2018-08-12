@@ -3,11 +3,15 @@ import "./App.css";
 import { Button } from "react-materialize";
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
+import AppNavbar from './components/layout/AppNavbar';
 
 class App extends Component {
 	render() {
 		return (
 			<Router>
+				  <div className="App">
+            <AppNavbar />
+            
 			<Switch>
 				<Route exact path='/' render={() => {
 					return <MainLayout />
@@ -42,6 +46,7 @@ class App extends Component {
 					}}
 				/>
 			</Switch>
+			</div>
 			</Router>
 		);
 	}
