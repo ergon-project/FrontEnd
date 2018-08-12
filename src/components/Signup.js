@@ -25,9 +25,9 @@ class Signup extends Component {
 
 		return (
             <div>
-                <Button onClick={this.onOpenModal} className='blue'>Sign In!</Button>
+                <Button onClick={this.onOpenModal} className='blue'>Sign Up!</Button>
                 <Modal open={open} onClose={this.onCloseModal} center>
-                    <h2>Sign In!</h2>
+                    <h2>Sign Up!</h2>
                     <Row>
                         <Input s={6} label="Name" />
                         <Input s={6} type='email' label="Email" />
