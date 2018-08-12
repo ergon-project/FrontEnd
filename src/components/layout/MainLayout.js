@@ -2,13 +2,17 @@ import React, { Component } from "react";
 import './MainLayout.css';
 import AppNavbar from  './AppNavbar';
 import Footer from  './Footer';
+import logo from '../../assets/logo3.png';
 
 export default class MainLayout extends Component {
 	render() {
 		console.log(this.props.children)
 		return <div className={'MainLayout'}> 
 			<AppNavbar/>
-			{this.props.children[0]}
+			<div className={'fakeBody'}>
+				<div className={'bigPic'}></div>
+				<img src={logo} style={{width: '100%'}} />
+			</div>
 			<Footer/>
 		</div>
 	}
