@@ -13,7 +13,7 @@ class MyFooter extends Component {
                 <li><a className="grey-text text-lighten-3" href="#!">FundME</a></li>
                 </ul>
             }
-            className='blue'
+            className='blue-grey darken-4'
             >
                 <h5 className="white-text left-align">ERGO</h5>
                 <p className="grey-text text-lighten-4 left-align">To empower employee resource groups to collaborate, connect and create events for their communities</p>
