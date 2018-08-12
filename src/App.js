@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Button } from "react-materialize";
+import { Button} from "react-materialize";
+import MyFooter from "./components/Footer";
 import AppNavbar from  './components/layout/AppNavbar';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
 					To get started, edit <code>src/App.js</code> and save to reload.
 				</p>
 				<Button floating large className="red" waves="light" icon="add" />
+        <MyFooter/>
 			</div>
 		);
 	}
