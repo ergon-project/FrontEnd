@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "react-materialize";
+import Signup from './components/Signup';
 
 class App extends Component {
 	render() {
