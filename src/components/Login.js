@@ -19,10 +19,11 @@ class Login extends Component {
     };
     
     render() {
+        const { open } = this.state;
+
 		return (
-            <div>
-                <Button onClick={this.onOpenModal} className='blue'>Log In!</Button>
-                <Modal open={open} onClose={this.onCloseModal} center>
+            <li><a onClick={this.onOpenModal}><i class="green-text material-icons left">store</i>Login</a> 
+            <Modal open={open} onClose={this.onCloseModal} center>
                     <h2>Log In!</h2>
                     <Row>
                         <Input s={6} type="email" label="Email" />
@@ -30,7 +31,8 @@ class Login extends Component {
                         <Button waves='light'>Log In!</Button>
                     </Row>
                 </Modal>
-            </div>
+            
+                </li>
 		);
     }
 

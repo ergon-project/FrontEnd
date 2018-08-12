@@ -54,7 +54,7 @@ class Attendees extends Component {
                     <div>
                         <div className={'scroll'}>
                         {this.users.map((user, i)=>{
-                            return (<Chip key={i} className={'blue lighten-2'}><img src={user.pic} alt='Contact Person' /> {user.name}</Chip>);
+                            return (<Chip key={i} className={'blue-grey lighten-5'}><img src={user.pic} alt='Contact Person' /> {user.name}</Chip>);
                         })}
                         </div>
                     </div>
