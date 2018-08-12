@@ -5,9 +5,10 @@ import Footer from  './Footer';
 
 export default class MainLayout extends Component {
 	render() {
+		console.log(this.props.children)
 		return <div className={'MainLayout'}> 
 			<AppNavbar/>
-			<div className={'fakeBody'}></div>
+			{this.props.children[0]}
 			<Footer/>
 		</div>
 	}
